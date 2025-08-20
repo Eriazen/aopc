@@ -8,17 +8,14 @@ class JSONGetter:
                  server: str,
                  endpoint: str,
                  items: str,
-                 locations: str | None = None,
-                 qualities: str | None = None) -> None:
+                 qualities: str,
+                 locations: str | None = None) -> None:
         self.CITIES = "5003,Black Market,Bridgewatch,Carleon,Fort Sterling,Lymhurst,Martlock,Thetford"
-        self.QUALITIES = "1,2,3,4,5"
 
         if not locations:
             locations = self.CITIES
-        if not qualities:
-            qualities = self.QUALITIES
+
         self.request = f"{server}/{quote(endpoint)}/{quote(items)}.json?locations={quote(locations)}&qualities={quote(qualities)}"
-        print(self.request)
         self.url_response = None
 
         self.reload_url()
