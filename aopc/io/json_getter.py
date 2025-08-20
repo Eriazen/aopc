@@ -10,7 +10,7 @@ class JSONGetter:
                  items: str,
                  qualities: str,
                  locations: str | None = None) -> None:
-        self.CITIES = "5003,Black Market,Bridgewatch,Carleon,Fort Sterling,Lymhurst,Martlock,Thetford"
+        self.CITIES = "Brecilien,Black Market,Bridgewatch,Caerleon,Fort Sterling,Lymhurst,Martlock,Thetford"
 
         if not locations:
             locations = self.CITIES
