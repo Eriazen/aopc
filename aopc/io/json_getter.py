@@ -20,7 +20,7 @@ class JSONGetter:
 
         self.reload_url()
 
-    def get_json(self) -> str:
+    def get_dict(self) -> str:
         return loads(self.url_response.read())
 
     def reload_url(self) -> None:
