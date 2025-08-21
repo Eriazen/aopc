@@ -5,7 +5,7 @@ from aopc.ui import market, crafting, transport, item_list
 
 x = JSONGetter("https://europe.albion-online-data.com", "/api/v2/stats/prices/", "T4_BAG", "1").get_dict()
 
-#settings.setup_ui()
+settings.setup_ui()
 
 with ui.header(elevated=True).classes('items-center justify-between flat bordered'):
     ui.label('aopc').props('width=150')
