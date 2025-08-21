@@ -1,6 +1,6 @@
 from nicegui import ui
 from aopc.io import JSONGetter
-from aopc.ui import market, crafting, transport, item_list
+from aopc.ui import market, crafting, transport, item_list, settings
 
 
 x = JSONGetter("https://europe.albion-online-data.com", "/api/v2/stats/prices/", "T4_BAG", "1").get_dict()
