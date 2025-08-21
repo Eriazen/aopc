@@ -1,6 +1,6 @@
 from nicegui import ui
 from aopc.io import JSONGetter
-from aopc.ui import market, crafting, transport, item_list, settings
+from aopc.core import MarketView
 
 
 def main():
@@ -9,5 +9,5 @@ def main():
     print(view.get_data())
 
 
-if __name__ == "__main__":
+if __name__ in {"__main__", "__mp_main__"}:
     main()
